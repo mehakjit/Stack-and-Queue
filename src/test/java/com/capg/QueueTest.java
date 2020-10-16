@@ -13,8 +13,9 @@ public class QueueTest {
 		queue.addQueue(myFirstNode);
 		queue.addQueue(mySecondNode);
 		queue.addQueue(myThirdNode);
+		queue.deQueue();
 		queue.printQueue();
 		int size = queue.size();
-		Assert.assertEquals(3, size);
+		Assert.assertEquals(2, size);
 	}
 }
