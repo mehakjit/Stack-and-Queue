@@ -103,4 +103,14 @@ public class MyLinkedList<K> {
 		}
 	}
 
+	public int size() {
+		int size = 0;
+		INode<K> tempNode = head;
+		while (tempNode != null) {
+			size++;
+			tempNode = tempNode.getNext();
+		}
+		return size;
+	}
+
 }

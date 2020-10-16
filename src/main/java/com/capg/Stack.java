@@ -19,4 +19,18 @@ public class Stack<K> {
 		return myLinkedList.head;
 	}
 
+	public INode<K> pop() {
+		return myLinkedList.pop();
+	}
+
+	public boolean isEmpty() {
+		if (myLinkedList.size() == 0)
+			return true;
+		else
+			return false;
+	}
+
+	public int size() {
+		return myLinkedList.size();
+	}
 }
